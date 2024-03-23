@@ -47,12 +47,28 @@
 
 <body>
     <script async src="https://static.wdgtsrc.com/assets/loader.js" data-chats-widget-id="020f2a73-983c-4978-9e4d-8c7ddd521148"></script>
+function quizCompleted() {
+    // Создаем элемент <script>
+    var script = document.createElement('script');
+    script.src = 'https://static.wdgtsrc.com/assets/loader.js';
+    script.async = true;
+    script.setAttribute("data-chats-widget-id", '020f2a73-983c-4978-9e4d-8c7ddd521148');
+    
+    // Добавляем скрипт в конец <body> после завершения квиза
+    document.body.appendChild(script);
+}
+    
   <!-- Facebook Pixel image -->
   <!-- Google tag iframe -->
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P75WD5F" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <script type="text/javascript">
+      script = document.createElement('script')
+      script.src = 'https://static.wdgtsrc.com/assets/loader.js';
+      script.async = true;
+      script.setAttribute("data-chats-widget-id",'020f2a73-983c-4978-9e4d-8c7ddd521148');
+      document.head.appendChild(script);
+      </script>
   <!-- End Google Tag Manager (noscript) -->
 
   <div id="app"></div>
